@@ -1,16 +1,24 @@
 const express = require("express");
 require("./Db/mongoose");
+// require('./Controllers/modals/Category')
+const expressGraphQL = require('express-graphql');
+const bodyParser = require('body-parser');
+const schema  = require('./Controllers/schema/schema')
 //main dashboard routers
 
 const app = express();
 const port = process.env.PORT;
 var cors = require("cors");
 app.use(cors());
-app.use(express.json());
+app.use(bodyParser.json());
+// const route = require('./Controllers/routers/CategoryRouter');
+// app.use(route);
+
+app.use('/graphql', expressGraphQL({
+    schema,
+    graphiql: true
+}));
 
 app.listen(port, () => {
-    console.log("Server isup on port " + port);
+    console.log("Server is up on port " + port);
 });
-// pid=50410 port=27017
-// https://git.heroku.com/shopify-api-nodejs.git
-// https://shopify-api-nodejs.herokuapp.com/
