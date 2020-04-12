@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="417db214-7c08-41a9-81ac-e45dfab21d86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controllers/modals/Category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/routers/CategoryRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/schema/Mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/schema/RootQuery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/schema/Types/CategoryType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/schema/schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/dev.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
