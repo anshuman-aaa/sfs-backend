@@ -13,12 +13,16 @@ const catSchema = new mongoose.Schema(
       required: [true, "Name of Category required"],
       validate(value) {
         if (!validator.isLength(value, { max: 50 })) {
-          throw new Error("Category name should not be more than 100 letters");
+          throw new Error("Category name should not be more than 50 letters");
         }
       }
     },
     categoryDesc: {
       type: String
+    },
+    categoryUri: {
+      type: String,
+      required: true
     }
   },
   {
