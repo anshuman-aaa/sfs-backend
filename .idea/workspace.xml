@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="417db214-7c08-41a9-81ac-e45dfab21d86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controllers/modals/Blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/schema/Types/BlogType.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/modals/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/modals/Category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/schema/Mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/schema/Mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/schema/RootQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/schema/RootQuery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/schema/Types/CategoryType.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/schema/Types/CategoryType.js" afterDir="false" />
-    </list>
+    <list default="true" id="417db214-7c08-41a9-81ac-e45dfab21d86" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
