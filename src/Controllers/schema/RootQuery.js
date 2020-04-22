@@ -8,17 +8,30 @@ const BlogType = require("./Types/BlogType");
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
   fields: () => ({
+    findCategory: {
+      type: CategoryType,
+      args: { id: { type: new GraphQLNonNull(GraphQLID) } },
+      resolve(parentvalue,{ id }) {
+        return Category.findById(id);
+      }
+    },
     category: {
       type: new GraphQLList(CategoryType),
       resolve() {
         return Category.find({});
       }
     },
-    blog: {
+    findBlog: {
       type: BlogType,
       args: { id: { type: new GraphQLNonNull(GraphQLID) } },
       resolve(parentvalue,{ id }) {
         return Blog.findById(id);
+      }
+    },
+    blog: {
+      type: new GraphQLList(BlogType),
+      resolve() {
+        return Blog.find({});
       }
     }
   })
