@@ -29,7 +29,7 @@ const RootQuery = new GraphQLObjectType({
       }
     },
     findBlogbyCat: {
-      type: BlogType,
+      type: new GraphQLList(BlogType),
       args: { categoryId: { type: new GraphQLNonNull(GraphQLInt) } },
       resolve(parentvalue,{ categoryId }) {
         return Blog.find({categoryId});
