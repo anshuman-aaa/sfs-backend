@@ -1,5 +1,5 @@
 const graphql = require("graphql");
-const { GraphQLObjectType, GraphQLList, GraphQLID, GraphQLNonNull } = graphql;
+const { GraphQLObjectType, GraphQLList, GraphQLID, GraphQLNonNull,GraphQLInt } = graphql;
 const Category = require("../modals/Category");
 const Blog = require("../modals/Blog");
 const CategoryType = require("./Types/CategoryType");
@@ -26,6 +26,13 @@ const RootQuery = new GraphQLObjectType({
       args: { id: { type: new GraphQLNonNull(GraphQLID) } },
       resolve(parentvalue,{ id }) {
         return Blog.findById(id);
+      }
+    },
+    findBlogbyCat: {
+      type: BlogType,
+      args: { categoryId: { type: new GraphQLNonNull(GraphQLInt) } },
+      resolve(parentvalue,{ categoryId }) {
+        return Blog.find({categoryId});
       }
     },
     blog: {
