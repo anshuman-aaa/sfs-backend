@@ -1,5 +1,6 @@
 const graphql = require('graphql');
 const { GraphQLObjectType, GraphQLString, GraphQLInt } = graphql;
+
 const CategoryType = new GraphQLObjectType({
     name: 'categoryType',
     fields: () => ({
