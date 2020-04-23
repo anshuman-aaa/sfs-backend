@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"sfs-data.blogs"}],"uuid":"e3b9bf7073de486b8257481fbcfeaa82"}

@@ -17,10 +17,7 @@ const Mutation = new GraphQLObjectType({
         categoryDesc: { type: GraphQLString },
         categoryUri: { type: GraphQLString }
       },
-      resolve(
-        parentValue,
-        { categoryId, categoryName, categoryDesc, categoryUri }
-      ) {
+      resolve(parentValue,{ categoryId, categoryName, categoryDesc, categoryUri }) {
         return new Category({
           categoryId,
           categoryName,
@@ -29,16 +26,16 @@ const Mutation = new GraphQLObjectType({
         }).save();
       }
     },
-    addBlog : {
+    addBlog: {
       type: BlogType,
-      args : {
+      args: {
         categoryId: { type: GraphQLInt },
-        blogTitle: {type: GraphQLString},
-        blogLogo: {type: GraphQLString},
-        blogDesc: {type: GraphQLJSON}
+        blogTitle: { type: GraphQLString },
+        blogLogo: { type: GraphQLString },
+        blogDesc: { type: GraphQLJSON }
       },
-      resolve(parentvalue, {categoryId,blogTitle,blogLogo,blogDesc}){
-        return new Blog({categoryId,blogTitle,blogLogo,blogDesc}).save();
+      resolve(parentvalue, { categoryId, blogTitle, blogLogo, blogDesc }) {
+        return new Blog({ categoryId, blogTitle, blogLogo, blogDesc }).save();
       }
     }
   }
