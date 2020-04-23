@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
 
-const catSchema = new mongoose.Schema(
+const blogSchema = new mongoose.Schema(
     {
         categoryId: {
             type: Number,
@@ -30,6 +30,6 @@ const catSchema = new mongoose.Schema(
     }
 );
 
-const Blog = mongoose.model("blogs", catSchema);
+const Blog = mongoose.model("blogs", blogSchema);
 
 module.exports = Blog;

@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"sfs-data.categories"}],"uuid":"95371d61e2e74d4d945b0adc948b2e7a"}

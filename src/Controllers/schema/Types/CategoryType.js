@@ -4,10 +4,10 @@ const { GraphQLObjectType, GraphQLString, GraphQLInt } = graphql;
 const CategoryType = new GraphQLObjectType({
     name: 'categoryType',
     fields: () => ({
-        categoryId : {type: GraphQLInt},
-        categoryName : {type: GraphQLString},
-        categoryDesc : {type: GraphQLString},
-        categoryUri : {type: GraphQLString}
+        categoryId: { type: GraphQLInt },
+        categoryName: { type: GraphQLString },
+        categoryDesc: { type: GraphQLString },
+        categoryUri: { type: GraphQLString }
     })
 });
 
