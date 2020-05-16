@@ -5,7 +5,7 @@ const expressGraphQL = require('express-graphql');
 const bodyParser = require('body-parser');
 //main dashboard routers
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT||3000;
 var cors = require("cors");
 const schema = require('./Controllers/schema/schema')
 
