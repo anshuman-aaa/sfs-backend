@@ -22,7 +22,6 @@ const catSchema = new mongoose.Schema(
     },
     categoryUri: {
       type: String,
-      required: true
     }
   },
   {
